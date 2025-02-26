@@ -15,3 +15,41 @@
 #### elevenlabs get-conversations
 - https://elevenlabs.io/docs/conversational-ai/api-reference/conversations/get-conversations
 - 대화가져오는 api주소입니다. 
+
+#### 대화내역 요약
+- http://dify.automationpro.online/v1/chat-messages
+- api_key : app-aOG12NIHydS8q2B7mJVIAadU
+
+curl -X POST 'http://dify.automationpro.online/v1/chat-messages' \
+--header 'Authorization: Bearer {api_key}' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "inputs": {},
+    "query": "What are the specs of the iPhone 13 Pro Max?",
+    "response_mode": "streaming",
+    "conversation_id": "",
+    "user": "abc-123",
+    "files": [
+      {
+        "type": "image",
+        "transfer_method": "remote_url",
+        "url": "https://cloud.dify.ai/logo/logo-site.png"
+      }
+    ]
+}'
+
+
+#### STP분석
+
+curl -X POST 'http://dify.automationpro.online/v1/workflows/run' \
+--header 'Authorization: Bearer app-JFPzzyroAt6AOAvu0rA1FkNE' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "inputs": {
+        "interview_content":"이곳에 대화내용이 들어가면 됩니다."
+    },
+    "response_mode": "blocking", 
+    "user": "abc-123"
+}'
+
+
