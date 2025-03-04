@@ -52,4 +52,42 @@ curl -X POST 'http://dify.automationpro.online/v1/workflows/run' \
     "user": "abc-123"
 }'
 
+#### 브랜드전략기획보고서
+curl -X POST 'http://dify.automationpro.online/v1/chat-messages' \
+--header 'Authorization: Bearer app-WaVF8poAO1YLFE7dNbpSjt8A' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "inputs": {
+        "stpContent" : "STP분석내용입니다"
+    },
+    "query": "What are the specs of the iPhone 13 Pro Max?",
+    "response_mode": "streaming",
+    "conversation_id": "",
+    "user": "abc-123",
+    "files": [
+      {
+        "type": "image",
+        "transfer_method": "remote_url",
+        "url": "https://cloud.dify.ai/logo/logo-site.png"
+      }
+    ]
+}'
 
+#### 브랜드네이밍보고서
+curl -X POST 'http://dify.automationpro.online/v1/chat-messages' \
+--header 'Authorization: Bearer app-V5GYVtSw2TvkyAxyYeVeQcdp' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "inputs": {},
+    "query": "What are the specs of the iPhone 13 Pro Max?",
+    "response_mode": "streaming",
+    "conversation_id": "",
+    "user": "abc-123",
+    "files": [
+      {
+        "type": "image",
+        "transfer_method": "remote_url",
+        "url": "https://cloud.dify.ai/logo/logo-site.png"
+      }
+    ]
+}'
