@@ -22,7 +22,7 @@
 - http://dify.automationpro.online/v1/chat-messages
 - api_key : app-aOG12NIHydS8q2B7mJVIAadU
 
-curl -X POST 'http://dify.automationpro.online/v1/chat-messages' \
+curl -X POST 'https://dify.automationpro.online/v1/chat-messages' \
 --header 'Authorization: Bearer {api_key}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -43,7 +43,7 @@ curl -X POST 'http://dify.automationpro.online/v1/chat-messages' \
 
 #### STP분석
 
-curl -X POST 'http://dify.automationpro.online/v1/workflows/run' \
+curl -X POST 'https://dify.automationpro.online/v1/workflows/run' \
 --header 'Authorization: Bearer app-JFPzzyroAt6AOAvu0rA1FkNE' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -55,7 +55,7 @@ curl -X POST 'http://dify.automationpro.online/v1/workflows/run' \
 }'
 
 #### 브랜드전략기획보고서
-curl -X POST 'http://dify.automationpro.online/v1/chat-messages' \
+curl -X POST 'https://dify.automationpro.online/v1/chat-messages' \
 --header 'Authorization: Bearer app-WaVF8poAO1YLFE7dNbpSjt8A' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -76,7 +76,7 @@ curl -X POST 'http://dify.automationpro.online/v1/chat-messages' \
 }'
 
 #### 브랜드아이덴티티
-curl -X POST 'http://dify.automationpro.online/v1/chat-messages' \
+curl -X POST 'https://dify.automationpro.online/v1/chat-messages' \
 --header 'Authorization: Bearer app-anaJeTBoLv5HyO9IhKdANTqR' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -98,7 +98,7 @@ curl -X POST 'http://dify.automationpro.online/v1/chat-messages' \
 
 
 #### 브랜드네이밍보고서
-curl -X POST 'http://dify.automationpro.online/v1/chat-messages' \
+curl -X POST 'https://dify.automationpro.online/v1/chat-messages' \
 --header 'Authorization: Bearer app-V5GYVtSw2TvkyAxyYeVeQcdp' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -118,7 +118,7 @@ curl -X POST 'http://dify.automationpro.online/v1/chat-messages' \
 
 
 #### 브랜드로고생성
-curl -X POST 'http://dify.automationpro.online/v1/chat-messages' \
+curl -X POST 'https://dify.automationpro.online/v1/chat-messages' \
 --header 'Authorization: Bearer app-rtTY3tr6GLb3wwmVNjtNBT56' \
 --header 'Content-Type: application/json' \
 --data-raw '{
