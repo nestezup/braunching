@@ -16,6 +16,8 @@
 - https://elevenlabs.io/docs/conversational-ai/api-reference/conversations/get-conversations
 - 대화가져오는 api주소입니다. 
 
+---
+
 #### 대화내역 요약
 - http://dify.automationpro.online/v1/chat-messages
 - api_key : app-aOG12NIHydS8q2B7mJVIAadU
@@ -73,6 +75,28 @@ curl -X POST 'http://dify.automationpro.online/v1/chat-messages' \
     ]
 }'
 
+#### 브랜드아이덴티티
+curl -X POST 'http://dify.automationpro.online/v1/chat-messages' \
+--header 'Authorization: Bearer app-anaJeTBoLv5HyO9IhKdANTqR' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "inputs": {},
+    "query": "이쪽으로 요청하시면 됩니다. ",
+    "response_mode": "streaming",
+    "conversation_id": "",
+    "user": "abc-123",
+    "files": [
+      {
+        "type": "image",
+        "transfer_method": "remote_url",
+        "url": "https://cloud.dify.ai/logo/logo-site.png"
+      }
+    ]
+}'
+
+
+
+
 #### 브랜드네이밍보고서
 curl -X POST 'http://dify.automationpro.online/v1/chat-messages' \
 --header 'Authorization: Bearer app-V5GYVtSw2TvkyAxyYeVeQcdp' \
@@ -80,6 +104,26 @@ curl -X POST 'http://dify.automationpro.online/v1/chat-messages' \
 --data-raw '{
     "inputs": {},
     "query": "What are the specs of the iPhone 13 Pro Max?",
+    "response_mode": "streaming",
+    "conversation_id": "",
+    "user": "abc-123",
+    "files": [
+      {
+        "type": "image",
+        "transfer_method": "remote_url",
+        "url": "https://cloud.dify.ai/logo/logo-site.png"
+      }
+    ]
+}'
+
+
+#### 브랜드로고생성
+curl -X POST 'http://dify.automationpro.online/v1/chat-messages' \
+--header 'Authorization: Bearer app-rtTY3tr6GLb3wwmVNjtNBT56' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "inputs": {},
+    "query": "이쪽으로 요청해주세요",
     "response_mode": "streaming",
     "conversation_id": "",
     "user": "abc-123",
