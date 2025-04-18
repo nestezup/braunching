@@ -1,0 +1,168 @@
+## 관련문서
+#### supabase
+- https://supabase.com/
+
+#### supabase kakao login
+- https://supabase.com/docs/guides/auth/social-login/auth-kakao
+
+#### elevenlabs conversational AI
+- https://elevenlabs.io/conversational-ai
+
+#### elevenlabs 샘플코드
+- https://github.com/nestezup/my-conversational-agent
+- 코드공유를 어떻게 하는 지 몰라서 github주소에 초대해드렸어요.
+- 
+#### elevenlabs get-conversations
+- https://elevenlabs.io/docs/conversational-ai/api-reference/conversations/get-conversations
+- 대화가져오는 api주소입니다. 
+
+### ideogram API
+- xwK9xAizNBlXP-Vj0xHGMFvAEtqMMKNpMES7Hqzt-zuv5oGhflpIic1lh-ze20TWPAxXcPDRBxCNziy7DgMIEQ
+
+#### Image generate
+curl -X POST https://api.ideogram.ai/generate \
+     -H "Api-Key: <apiKey>" \
+     -H "Content-Type: application/json" \
+     -d '{
+  "image_request": {
+    "prompt": "A serene tropical beach scene. Dominating the foreground are tall palm trees with lush green leaves, standing tall against a backdrop of a sandy beach. The beach leads to the azure waters of the sea, which gently kisses the shoreline. In the distance, there is an island or landmass with a silhouette of what appears to be a lighthouse or tower. The sky above is painted with fluffy white clouds, some of which are tinged with hues of pink and orange, suggesting either a sunrise or sunset.",
+    "aspect_ratio": "ASPECT_10_16",
+    "model": "V_2",
+    "magic_prompt_option": "AUTO"
+  }
+}'
+
+#### Successful 200
+{
+  "created": "2000-01-23T04:56:07Z",
+  "data": [
+    {
+      "prompt": "A serene tropical beach scene. Dominating the foreground are tall palm trees with lush green leaves, standing tall against a backdrop of a sandy beach. The beach leads to the azure waters of the sea, which gently kisses the shoreline. In the distance, there's an island or landmass with a silhouette of what appears to be a lighthouse or tower. The sky above is painted with fluffy white clouds, some of which are tinged with hues of pink and orange, suggesting either a sunrise or sunset.",
+      "resolution": "1024x1024",
+      "is_image_safe": true,
+      "seed": 12345,
+      "url": "https://ideogram.ai/api/images/direct/8YEpFzHuS-S6xXEGmCsf7g",
+      "style_type": "REALISTIC"
+    }
+  ]
+}
+
+---
+
+#### 대화내역 요약
+- http://dify.automationpro.online/v1/chat-messages
+- api_key : app-kaz8FYU5rd6slgnaOpSLdT7y
+
+curl -X POST 'https://dify.automationpro.online/v1/chat-messages' \
+--header 'Authorization: Bearer {api_key}' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "inputs": {},
+    "query": "What are the specs of the iPhone 13 Pro Max?",
+    "response_mode": "streaming",
+    "conversation_id": "",
+    "user": "abc-123",
+    "files": [
+      {
+        "type": "image",
+        "transfer_method": "remote_url",
+        "url": "https://cloud.dify.ai/logo/logo-site.png"
+      }
+    ]
+}'
+
+
+#### STP분석
+
+curl -X POST 'https://dify.automationpro.online/v1/workflows/run' \
+--header 'Authorization: Bearer app-FGLB91Y3B0Q263bPQDI0KgPj' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "inputs": {
+        "interview_content":"이곳에 대화내용이 들어가면 됩니다."
+    },
+    "response_mode": "blocking", 
+    "user": "abc-123"
+}'
+
+#### 브랜드전략기획보고서
+curl -X POST 'https://dify.automationpro.online/v1/chat-messages' \
+--header 'Authorization: Bearer app-nVM0vNEH62lPY3f8RBvfTxFp' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "inputs": {
+        "stpContent" : "STP분석내용입니다"
+    },
+    "query": "What are the specs of the iPhone 13 Pro Max?",
+    "response_mode": "streaming",
+    "conversation_id": "",
+    "user": "abc-123",
+    "files": [
+      {
+        "type": "image",
+        "transfer_method": "remote_url",
+        "url": "https://cloud.dify.ai/logo/logo-site.png"
+      }
+    ]
+}'
+
+#### 브랜드아이덴티티
+curl -X POST 'https://dify.automationpro.online/v1/chat-messages' \
+--header 'Authorization: Bearer app-w8h0hEwwnBAE1bFDeNS1YSkI' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "inputs": {},
+    "query": "이쪽으로 요청하시면 됩니다. ",
+    "response_mode": "streaming",
+    "conversation_id": "",
+    "user": "abc-123",
+    "files": [
+      {
+        "type": "image",
+        "transfer_method": "remote_url",
+        "url": "https://cloud.dify.ai/logo/logo-site.png"
+      }
+    ]
+}'
+
+
+
+
+#### 브랜드네이밍보고서 
+curl -X POST 'https://dify.automationpro.online/v1/chat-messages' \
+--header 'Authorization: Bearer app-3baf3Fax0fWE7eQt4IhRHDUg' \ 
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "inputs": {},
+    "query": "What are the specs of the iPhone 13 Pro Max?",
+    "response_mode": "streaming",
+    "conversation_id": "",
+    "user": "abc-123",
+    "files": [
+      {
+        "type": "image",
+        "transfer_method": "remote_url",
+        "url": "https://cloud.dify.ai/logo/logo-site.png"
+      }
+    ]
+}'
+
+
+#### 브랜드로고생성
+curl -X POST 'https://dify.automationpro.online/v1/chat-messages' \
+--header 'Authorization: Bearer app-j7GAvxoetjbqPg5RqhxQ4Ymt' \ 
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "inputs": {},
+    "query": "이쪽으로 요청해주세요",
+    "response_mode": "streaming",
+    "conversation_id": "",
+    "user": "abc-123",
+    "files": [
+      {
+        "type": "image",
+        "transfer_method": "remote_url",
+        "url": "https://cloud.dify.ai/logo/logo-site.png"
+      }
+    ]
+}'
