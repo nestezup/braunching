@@ -45,8 +45,8 @@ curl -X POST https://api.ideogram.ai/generate \
 ---
 
 #### 대화내역 요약
-- https://minilab.automationpro.online/v1/chat-messages
-- api_key : app-kaz8FYU5rd6slgnaOpSLdT7y
+- https://dify.slowcampus.kr/v1/chat-messages
+- api_key : app-TKToqYafgNjvlWRQ0AmaxXKI
 
 curl -X POST 'https://dify.automationpro.online/v1/chat-messages' \
 --header 'Authorization: Bearer {api_key}' \
@@ -69,8 +69,8 @@ curl -X POST 'https://dify.automationpro.online/v1/chat-messages' \
 
 #### STP분석
 
-curl -X POST 'https://minilab.automationpro.online/v1/workflows/run' \
---header 'Authorization: Bearer app-FGLB91Y3B0Q263bPQDI0KgPj' \
+curl -X POST 'https://dify.slowcampus.kr/v1/workflows/run' \
+--header 'Authorization: Bearer app-xH18LDorsC2BdXa5n52ffPkF' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "inputs": {
@@ -81,8 +81,8 @@ curl -X POST 'https://minilab.automationpro.online/v1/workflows/run' \
 }'
 
 #### 브랜드전략기획보고서
-curl -X POST 'https://minilab.automationpro.online/v1/chat-messages' \
---header 'Authorization: Bearer app-nVM0vNEH62lPY3f8RBvfTxFp' \
+curl -X POST 'https://dify.slowcampus.kr/v1/chat-messages' \
+--header 'Authorization: Bearer app-uq3ue1kqtKfxjZ9yp90DTYdt' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "inputs": {
@@ -102,8 +102,8 @@ curl -X POST 'https://minilab.automationpro.online/v1/chat-messages' \
 }'
 
 #### 브랜드아이덴티티
-curl -X POST 'https://minilab.automationpro.online/v1/chat-messages' \
---header 'Authorization: Bearer app-w8h0hEwwnBAE1bFDeNS1YSkI' \
+curl -X POST 'https://dify.slowcampus.kr/v1/chat-messages' \
+--header 'Authorization: Bearer app-fA7Yfv4sp5apizqRutQnsBUO' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "inputs": {},
@@ -124,8 +124,8 @@ curl -X POST 'https://minilab.automationpro.online/v1/chat-messages' \
 
 
 #### 브랜드네이밍보고서 
-curl -X POST 'https://minilab.automationpro.online/v1/chat-messages' \
---header 'Authorization: Bearer app-3baf3Fax0fWE7eQt4IhRHDUg' \ 
+curl -X POST 'https://dify.slowcampus.kr/v1/chat-messages' \
+--header 'Authorization: Bearer app-sjqQLw1Xext9avtbzxZ39Uf6' \ 
 --header 'Content-Type: application/json' \
 --data-raw '{
     "inputs": {},
@@ -144,8 +144,8 @@ curl -X POST 'https://minilab.automationpro.online/v1/chat-messages' \
 
 
 #### 브랜드로고생성
-curl -X POST 'https://minilab.automationpro.online/v1/chat-messages' \
---header 'Authorization: Bearer app-j7GAvxoetjbqPg5RqhxQ4Ymt' \ 
+curl -X POST 'https://dify.slowcampus.kr/v1/chat-messages' \
+--header 'Authorization: Bearer app-TY3OoHRvx1Yee6MkRT19qrt1' \ 
 --header 'Content-Type: application/json' \
 --data-raw '{
     "inputs": {},
